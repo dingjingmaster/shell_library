@@ -18,7 +18,7 @@ temp="/tmp/sendmail.tmp"
 
 fileAppend "From: ${from}" > ${temp}
 fileAppend "To: ${toEmail}" >> ${temp}
-fileAppend "Subject: $(subject)" >> ${temp}
+fileAppend "Subject: ${subject}" >> ${temp}
 fileAppend "Content-Type: text/html; charset=utf-8; format=flowed" >> ${temp}
 fileAppend "Content-Transfer-Encoding: 7bit" >> ${temp}
 fileAppend "Content-Disposition: inline" >> ${temp}
